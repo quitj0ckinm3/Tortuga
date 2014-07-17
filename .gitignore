@@ -8,6 +8,9 @@ Desktop.ini
 # Recycle Bin used on file shares
 $RECYCLE.BIN/
 
+bin/
+obj/
+
 # Windows Installer files
 *.cab
 *.msi
@@ -34,6 +37,3 @@ Icon
 # Files that might appear on external disk
 .Spotlight-V100
 .Trashes
-
-bin/
-obj/
