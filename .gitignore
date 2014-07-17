@@ -16,6 +16,7 @@ obj/
 *.msi
 *.msm
 *.msp
+*.cache
 
 # =========================
 # Operating System Files
