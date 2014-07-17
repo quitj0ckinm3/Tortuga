@@ -12,8 +12,15 @@ C:\Users\John\documents\visual studio 2013\Projects\WindowsFormsApplication1\Win
 C:\Users\John\documents\visual studio 2013\Projects\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\Tortuga.exe
 C:\Users\John\documents\visual studio 2013\Projects\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\Tortuga.pdb
 Q:\Workspace\Visual Studio\Tortuga\WindowsFormsApplication1\bin\Debug\Tortuga.exe.config
+Q:\Workspace\Visual Studio\Tortuga\WindowsFormsApplication1\bin\Debug\Tortuga.exe
+Q:\Workspace\Visual Studio\Tortuga\WindowsFormsApplication1\bin\Debug\Tortuga.pdb
+Q:\Workspace\Visual Studio\Tortuga\WindowsFormsApplication1\bin\Debug\Interop.WMPLib.dll
+Q:\Workspace\Visual Studio\Tortuga\WindowsFormsApplication1\bin\Debug\AxInterop.WMPLib.dll
 Q:\Workspace\Visual Studio\Tortuga\WindowsFormsApplication1\obj\Debug\Interop.WMPLib.dll
 Q:\Workspace\Visual Studio\Tortuga\WindowsFormsApplication1\obj\Debug\AxInterop.WMPLib.dll
 Q:\Workspace\Visual Studio\Tortuga\WindowsFormsApplication1\obj\Debug\Tortuga.csproj.ResolveComReference.cache
+Q:\Workspace\Visual Studio\Tortuga\WindowsFormsApplication1\obj\Debug\Tortuga.Tortuga.resources
+Q:\Workspace\Visual Studio\Tortuga\WindowsFormsApplication1\obj\Debug\Tortuga.Properties.Resources.resources
+Q:\Workspace\Visual Studio\Tortuga\WindowsFormsApplication1\obj\Debug\Tortuga.csproj.GenerateResource.Cache
 Q:\Workspace\Visual Studio\Tortuga\WindowsFormsApplication1\obj\Debug\Tortuga.exe
 Q:\Workspace\Visual Studio\Tortuga\WindowsFormsApplication1\obj\Debug\Tortuga.pdb

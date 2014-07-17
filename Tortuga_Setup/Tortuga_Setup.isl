@@ -340,12 +340,9 @@
 		<col def="S0">ISDotNetInstallerArgsCommit</col>
 		<col def="S0">ISDotNetInstallerArgsUninstall</col>
 		<col def="S0">ISDotNetInstallerArgsRollback</col>
-		<row><td>AxInterop.WMPLib.dll1</td><td>{6954E3E2-5F33-4EFA-91A7-40DC6D8FF022}</td><td>INSTALLDIR</td><td>2</td><td/><td>axinterop.wmplib.dll1</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
 		<row><td>ISX_DEFAULTCOMPONENT</td><td>{D919D8F1-A571-422A-93EF-33CC117612B1}</td><td>INSTALLDIR</td><td>2</td><td/><td/><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
 		<row><td>ISX_DEFAULTCOMPONENT1</td><td>{6DCA1694-F217-4ED6-9B23-49DDFB1238E6}</td><td>TORTUGA</td><td>2</td><td/><td/><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
-		<row><td>Interop.WMPLib.dll1</td><td>{097B1212-8ABE-462F-9AD0-8CC18121B425}</td><td>INSTALLDIR</td><td>2</td><td/><td>interop.wmplib.dll1</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
 		<row><td>Tortuga.Primary_output1</td><td>{DFAFD470-5E6C-49E1-AC45-31E4AAD71A85}</td><td>INSTALLDIR</td><td>2</td><td/><td>tortuga.primary_output1</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
-		<row><td>wmp.dll1</td><td>{919FC6A0-4729-4943-8F13-FB39E70F61DE}</td><td>INSTALLDIR</td><td>2</td><td/><td>wmp.dll1</td><td>20</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
 	</table>
 
 	<table name="Condition">
@@ -1867,12 +1864,9 @@
 	<table name="FeatureComponents">
 		<col key="yes" def="s38">Feature_</col>
 		<col key="yes" def="s72">Component_</col>
-		<row><td>AlwaysInstall</td><td>AxInterop.WMPLib.dll1</td></row>
 		<row><td>AlwaysInstall</td><td>ISX_DEFAULTCOMPONENT</td></row>
 		<row><td>AlwaysInstall</td><td>ISX_DEFAULTCOMPONENT1</td></row>
-		<row><td>AlwaysInstall</td><td>Interop.WMPLib.dll1</td></row>
 		<row><td>AlwaysInstall</td><td>Tortuga.Primary_output1</td></row>
-		<row><td>AlwaysInstall</td><td>wmp.dll1</td></row>
 	</table>
 
 	<table name="File">
@@ -1887,11 +1881,8 @@
 		<col def="S255">ISBuildSourcePath</col>
 		<col def="I4">ISAttributes</col>
 		<col def="S72">ISComponentSubFolder_</col>
-		<row><td>axinterop.wmplib.dll1</td><td>AxInterop.WMPLib.dll1</td><td>AXINTE~1.DLL|AxInterop.WMPLib.dll</td><td>0</td><td/><td/><td/><td>1</td><td>C:\Users\John\Documents\Visual Studio 2013\Projects\WindowsFormsApplication1\WindowsFormsApplication1\bin\Debug\AxInterop.WMPLib.dll</td><td>1</td><td/></row>
-		<row><td>interop.wmplib.dll1</td><td>Interop.WMPLib.dll1</td><td>INTERO~1.DLL|Interop.WMPLib.dll</td><td>0</td><td/><td/><td/><td>1</td><td>C:\Users\John\Documents\Visual Studio 2013\Projects\WindowsFormsApplication1\WindowsFormsApplication1\bin\Debug\Interop.WMPLib.dll</td><td>1</td><td/></row>
 		<row><td>pirate_ship_wall_art_decal_01</td><td>ISX_DEFAULTCOMPONENT</td><td>PIRATE~1.ICO|pirate-ship-wall-art-decal-03.ico</td><td>0</td><td/><td/><td/><td>1</td><td>Q:\pirate-ship-wall-art-decal-03.ico</td><td>1</td><td/></row>
 		<row><td>tortuga.primary_output1</td><td>Tortuga.Primary_output1</td><td>Tortuga.Primary output</td><td>0</td><td/><td/><td/><td>1</td><td>&lt;Tortuga&gt;|Built</td><td>3</td><td/></row>
-		<row><td>wmp.dll1</td><td>wmp.dll1</td><td>wmp.dll</td><td>0</td><td/><td/><td/><td>1</td><td>C:\Windows\System32\wmp.dll</td><td>1</td><td/></row>
 	</table>
 
 	<table name="FileSFPCatalog">
@@ -2036,12 +2027,9 @@
 		<col def="S0">FTPLocation</col>
 		<col def="S0">HTTPLocation</col>
 		<col def="S0">Miscellaneous</col>
-		<row><td>AxInterop.WMPLib.dll1</td><td/><td/><td>_201E300B_2CC7_4F84_9761_780908F862D7_FILTER</td><td/><td/><td/><td/></row>
 		<row><td>ISX_DEFAULTCOMPONENT</td><td/><td/><td>_16E2A6AF_7DB7_4795_89C2_06164DDDA814_FILTER</td><td/><td/><td/><td/></row>
 		<row><td>ISX_DEFAULTCOMPONENT1</td><td/><td/><td>_3A82D873_A2E0_47C1_A964_BCE01C38F72B_FILTER</td><td/><td/><td/><td/></row>
-		<row><td>Interop.WMPLib.dll1</td><td/><td/><td>_E02F275F_7460_4460_B025_917D4003D31D_FILTER</td><td/><td/><td/><td/></row>
 		<row><td>Tortuga.Primary_output1</td><td/><td/><td>_38201B86_8AD8_49A4_82CF_74501D2D7B82_FILTER</td><td/><td/><td/><td/></row>
-		<row><td>wmp.dll1</td><td/><td/><td>_E9DA5182_1E08_4708_94FC_E9C90C567B59_FILTER</td><td/><td/><td/><td/></row>
 	</table>
 
 	<table name="ISCustomActionReference">
@@ -4015,7 +4003,7 @@ UwBpAG4AZwBsAGUASQBtAGEAZwBlAAEARQB4AHAAcgBlAHMAcwA=
 		<row><td>ISTheme</td><td>InstallShield Blue.theme</td></row>
 		<row><td>ISUSLock</td><td>{A0B65973-7E46-4092-AB16-23EACDB92CE0}</td></row>
 		<row><td>ISUSSignature</td><td>{0C884948-AFBA-459E-B3D7-19B5D4205574}</td></row>
-		<row><td>ISVisitedViews</td><td>viewAssistant</td></row>
+		<row><td>ISVisitedViews</td><td>viewAssistant,viewISToday</td></row>
 		<row><td>Limited</td><td>1</td></row>
 		<row><td>LockPermissionMode</td><td>1</td></row>
 		<row><td>MsiExecCmdLineOptions</td><td/></row>
