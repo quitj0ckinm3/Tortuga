@@ -52,9 +52,10 @@ namespace Tortuga
 
                 }
             }
-            if (e.newState == 1)
+            if (e.newState == 1 || e.newState == 2)
             {
                 userStopped = true;
+                stopBtn.Text = "Play";
             }
         }
 
@@ -108,9 +109,16 @@ namespace Tortuga
 
         private void stopBtn_Click(object sender, EventArgs e)
         {
+
             if (mediaPlayer.URL.Length > 0)
             {
-                if (mediaPlayer.playState == WMPPlayState.wmppsPlaying)
+                if (userStopped)
+                {
+                    mediaPlayer.Ctlcontrols.play();
+                    stopBtn.Text = "Stop";
+                    userStopped = false;
+                }
+                else if (mediaPlayer.playState == WMPPlayState.wmppsPlaying)
                 {
                     mediaPlayer.Ctlcontrols.stop();
                     mediaPlayer.Ctlcontrols.currentPosition = 0;
@@ -118,78 +126,65 @@ namespace Tortuga
             }
         }
 
+        private void getVideoFiles(List<String> dirNames)
+        {
+            if (dirNames.Count() > 0)
+                foreach (String dir in dirNames)
+                {
+                    foreach (string filename in Directory.GetFiles(dir, ".", System.IO.SearchOption.AllDirectories))
+                    {
+                        if (filename.ToLower().EndsWith(".mp4") == true || filename.ToLower().EndsWith(".avi") == true)
+                        {
+                            videoFileNames.Add(filename);
+                        }
+                    }
+                }
+        }
+
         private void playBtn_Click(object sender, EventArgs e)
         {
-            if (userStopped)
+            stopBtn.Text = "Stop";
+            userStopped = false;
+            List<String> dirNames = new List<String>();
+            if (!videoPage)
             {
-                mediaPlayer.Ctlcontrols.play();
-                userStopped = false;
+                dirNames.Clear();
+                videoFileNames.Clear();
+                if (seqListBox.SelectedIndices.Count > 0)
+                {
+                    foreach (Object selectedItem in seqListBox.SelectedItems)
+                    {
+                        dirNames.Add(selectedItem as String);
+                    }
+                    getVideoFiles(dirNames);
+                    if (videoFileNames.Count() > 1)
+                    {
+                        mediaPlayer.URL = videoFileNames[0];
+                        previousVideoFileNames.Add(videoFileNames[0]);
+                        videoFileNames.RemoveAt(0);
+                    }
+
+                }
             }
-            else
+            else if (videoPage)
             {
-                List<String> dirNames = new List<String>();
-                if (!videoPage)
+                dirNames.Clear();
+                videoFileNames.Clear();
+                if (chSurfListBox.SelectedIndices.Count > 0)
                 {
-                    dirNames.Clear();
-                    videoFileNames.Clear();
-                    if (seqListBox.SelectedIndices.Count > 0)
+                    foreach (Object selectedItem in chSurfListBox.SelectedItems)
                     {
-                        foreach (Object selectedItem in seqListBox.SelectedItems)
-                        {
-                            dirNames.Add(selectedItem as String);
-                        }
-                        if (dirNames.Count() > 0)
-                            foreach (String dir in dirNames)
-                            {
-                                foreach (string filename in Directory.GetFiles(dir, ".", System.IO.SearchOption.AllDirectories))
-                                {
-                                    if (filename.ToLower().EndsWith(".mp4") == true || filename.ToLower().EndsWith(".avi") == true)
-                                    {
-                                        videoFileNames.Add(filename);
-                                    }
-                                }
-                            }
-
-                        if (videoFileNames.Count() > 1)
-                        {
-                            mediaPlayer.URL = videoFileNames[0];
-                            previousVideoFileNames.Add(videoFileNames[0]);
-                            videoFileNames.RemoveAt(0);
-                        }
-
+                        dirNames.Add(selectedItem as String);
+                    }
+                    getVideoFiles(dirNames);
+                    if (videoFileNames.Count() > 1)
+                    {
+                        int rndIndex = randomIndex();
+                        mediaPlayer.URL = videoFileNames[rndIndex];
+                        previousVideoFileNames.Add(videoFileNames[rndIndex]);
                     }
                 }
-                else if (videoPage)
-                {
-                    dirNames.Clear();
-                    videoFileNames.Clear();
-                    if (chSurfListBox.SelectedIndices.Count > 0)
-                    {
-                        foreach (Object selectedItem in chSurfListBox.SelectedItems)
-                        {
-                            dirNames.Add(selectedItem as String);
-                        }
-                        if (dirNames.Count() > 0)
-                            foreach (String dir in dirNames)
-                            {
-                                foreach (string filename in Directory.GetFiles(dir, ".", System.IO.SearchOption.AllDirectories))
-                                {
-                                    if (filename.ToLower().EndsWith(".mp4") == true || filename.ToLower().EndsWith(".avi") == true)
-                                    {
-                                        videoFileNames.Add(filename);
-                                    }
-                                }
-                            }
 
-                        if (videoFileNames.Count() > 1)
-                        {
-                            int rndIndex = randomIndex();
-                            mediaPlayer.URL = videoFileNames[rndIndex];
-                            previousVideoFileNames.Add(videoFileNames[rndIndex]);
-                        }
-                    }
-
-                }
             }
         }
 

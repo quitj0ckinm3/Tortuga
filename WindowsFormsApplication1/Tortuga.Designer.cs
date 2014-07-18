@@ -173,7 +173,7 @@
             this.playBtn.Name = "playBtn";
             this.playBtn.Size = new System.Drawing.Size(75, 23);
             this.playBtn.TabIndex = 1;
-            this.playBtn.Text = "Play";
+            this.playBtn.Text = "Start";
             this.playBtn.UseVisualStyleBackColor = true;
             this.playBtn.Click += new System.EventHandler(this.playBtn_Click);
             // 
